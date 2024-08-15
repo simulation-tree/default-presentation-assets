@@ -1,0 +1,4 @@
+﻿{
+    "vertex": "*/Assets/Shaders/UnlitTextured.vertex.glsl",
+    "fragment": "*/Assets/Shaders/UnlitTextured.fragment.glsl"
+}
