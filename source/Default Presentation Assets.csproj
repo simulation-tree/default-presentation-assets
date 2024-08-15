@@ -1,42 +1,45 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <IsAotCompatible>True</IsAotCompatible>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<IsAotCompatible>True</IsAotCompatible>
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+		<IsTrimmable>False</IsTrimmable>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <IsAotCompatible>True</IsAotCompatible>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<IsAotCompatible>True</IsAotCompatible>
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+		<IsTrimmable>False</IsTrimmable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Assets\Materials\UnlitTextured.material.json" />
-    <None Remove="Assets\Shaders\UnlitTextured.fragment.glsl" />
-    <None Remove="Assets\Shaders\UnlitTextured.vertex.glsl" />
-  </ItemGroup>
+	<ItemGroup>
+	  <None Remove="Assets\Materials\UnlitTextured.material.json" />
+	  <None Remove="Assets\Meshes\Quad.obj" />
+	  <None Remove="Assets\Shaders\UnlitTextured.fragment.glsl" />
+	  <None Remove="Assets\Shaders\UnlitTextured.vertex.glsl" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="Assets\Materials\UnlitTextured.material.json" />
-    <EmbeddedResource Include="Assets\Shaders\UnlitTextured.fragment.glsl" />
-    <EmbeddedResource Include="Assets\Shaders\UnlitTextured.vertex.glsl" />
-  </ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="Assets\Materials\UnlitTextured.material.json" />
+	  <EmbeddedResource Include="Assets\Meshes\Quad.obj" />
+	  <EmbeddedResource Include="Assets\Shaders\UnlitTextured.fragment.glsl" />
+	  <EmbeddedResource Include="Assets\Shaders\UnlitTextured.vertex.glsl" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\data\source\Data.csproj" />
-    <ProjectReference Include="..\..\simulation\source\Simulation.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\data\source\Data.csproj" />
+		<ProjectReference Include="..\..\simulation\source\Simulation.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Assets\Meshes\" />
-    <Folder Include="Assets\Textures\" />
-    <Folder Include="Assets\Fonts\" />
-  </ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Assets\Fonts\" />
+	  <Folder Include="Assets\Textures\" />
+	</ItemGroup>
 
 </Project>
