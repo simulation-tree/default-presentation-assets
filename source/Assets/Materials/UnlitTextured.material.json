@@ -1,10 +1,4 @@
 ﻿{
   "vertex": "*/Assets/Shaders/UnlitTextured.vertex.glsl",
-  "fragment": "*/Assets/Shaders/UnlitTextured.fragment.glsl",
-  "pushBindings": [
-    {
-      "name": "color",
-      "default": "1, 1, 1, 1"
-    }
-  ]
+  "fragment": "*/Assets/Shaders/UnlitTextured.fragment.glsl"
 }
