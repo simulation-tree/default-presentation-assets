@@ -24,7 +24,9 @@
 	  <None Remove="Assets\Fonts\CascadiaMono.ttf" />
 	  <None Remove="Assets\Materials\Text.material.json" />
 	  <None Remove="Assets\Materials\UnlitTextured.material.json" />
+	  <None Remove="Assets\Meshes\Cube.obj" />
 	  <None Remove="Assets\Meshes\Quad.obj" />
+	  <None Remove="Assets\Meshes\Sphere.obj" />
 	  <None Remove="Assets\Shaders\Text.fragment.glsl" />
 	  <None Remove="Assets\Shaders\Text.vertex.glsl" />
 	  <None Remove="Assets\Shaders\UnlitTextured.fragment.glsl" />
@@ -37,7 +39,9 @@
 	  <EmbeddedResource Include="Assets\Fonts\CascadiaMono.ttf" />
 	  <EmbeddedResource Include="Assets\Materials\Text.material.json" />
 	  <EmbeddedResource Include="Assets\Materials\UnlitTextured.material.json" />
+	  <EmbeddedResource Include="Assets\Meshes\Cube.obj" />
 	  <EmbeddedResource Include="Assets\Meshes\Quad.obj" />
+	  <EmbeddedResource Include="Assets\Meshes\Sphere.obj" />
 	  <EmbeddedResource Include="Assets\Shaders\Text.fragment.glsl" />
 	  <EmbeddedResource Include="Assets\Shaders\Text.vertex.glsl" />
 	  <EmbeddedResource Include="Assets\Shaders\UnlitTextured.fragment.glsl" />

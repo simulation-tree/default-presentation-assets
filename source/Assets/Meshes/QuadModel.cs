@@ -3,7 +3,7 @@ using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct QuadMesh : IDataReference
+    public readonly struct QuadModel : IDataReference
     {
         FixedString IDataReference.Value => "*/Assets/Meshes/Quad.obj";
     }
