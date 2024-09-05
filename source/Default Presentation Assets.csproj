@@ -4,8 +4,6 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<BaseOutputPath>bin~\</BaseOutputPath>
-		<BaseIntermediateOutputPath>obj~\</BaseIntermediateOutputPath>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,6 +20,7 @@
 
 	<ItemGroup>
 	  <None Remove="Assets\Fonts\CascadiaMono.ttf" />
+	  <None Remove="Assets\Fonts\Roboto.ttf" />
 	  <None Remove="Assets\Materials\Text.material.json" />
 	  <None Remove="Assets\Materials\UnlitTextured.material.json" />
 	  <None Remove="Assets\Meshes\Cube.obj" />
@@ -37,6 +36,7 @@
 
 	<ItemGroup>
 	  <EmbeddedResource Include="Assets\Fonts\CascadiaMono.ttf" />
+	  <EmbeddedResource Include="Assets\Fonts\Roboto.ttf" />
 	  <EmbeddedResource Include="Assets\Materials\Text.material.json" />
 	  <EmbeddedResource Include="Assets\Materials\UnlitTextured.material.json" />
 	  <EmbeddedResource Include="Assets\Meshes\Cube.obj" />
