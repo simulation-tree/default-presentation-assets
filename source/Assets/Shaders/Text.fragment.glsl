@@ -8,5 +8,6 @@ layout(binding = 0) uniform sampler2D fontAtlas;
 layout(location = 0) out vec4 outColor;
 
 void main() {
-    outColor = texture(fontAtlas, uv).x * fragColor;
+    vec4 inputColor = texture(fontAtlas, uv);
+    outColor = inputColor.x * fragColor;
 }
