@@ -5,6 +5,6 @@ namespace DefaultPresentationAssets
 {
     public readonly struct QuadModel : IDataReference
     {
-        FixedString IDataReference.Value => "*/Assets/Meshes/Quad.obj";
+        FixedString IDataReference.Value => "Assets/Meshes/Quad.obj";
     }
 }

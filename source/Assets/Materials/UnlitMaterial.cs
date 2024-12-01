@@ -5,6 +5,6 @@ namespace DefaultPresentationAssets
 {
     public readonly struct UnlitTexturedMaterial : IDataReference
     {
-        FixedString IDataReference.Value => "*/Assets/Materials/UnlitTextured.material.json";
+        FixedString IDataReference.Value => "Assets/Materials/UnlitTextured.material.json";
     }
 }

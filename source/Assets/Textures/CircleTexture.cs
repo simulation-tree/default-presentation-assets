@@ -5,6 +5,6 @@ namespace DefaultPresentationAssets
 {
     public readonly struct CircleTexture : IDataReference
     {
-        FixedString IDataReference.Value => "*/Assets/Textures/Circle.png";
+        FixedString IDataReference.Value => "Assets/Textures/Circle.png";
     }
 }

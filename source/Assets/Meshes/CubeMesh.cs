@@ -5,6 +5,6 @@ namespace DefaultPresentationAssets
 {
     public readonly struct CubeMesh : IDataReference
     {
-        FixedString IDataReference.Value => "*/Assets/Meshes/Cube.obj";
+        FixedString IDataReference.Value => "Assets/Meshes/Cube.obj";
     }
 }

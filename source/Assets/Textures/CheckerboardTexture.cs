@@ -5,6 +5,6 @@ namespace DefaultPresentationAssets
 {
     public readonly struct CheckerboardTexture : IDataReference
     {
-        FixedString IDataReference.Value => "*/Assets/Textures/Checkerboard.png";
+        FixedString IDataReference.Value => "Assets/Textures/Checkerboard.png";
     }
 }

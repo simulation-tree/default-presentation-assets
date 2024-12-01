@@ -37,54 +37,54 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Resource Include="Assets\Fonts\CascadiaMono.ttf">
+	  <Content Include="Assets\Fonts\CascadiaMono.ttf">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Fonts\Roboto.ttf">
+	  </Content>
+	  <Content Include="Assets\Fonts\Roboto.ttf">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Materials\Text.material.json">
+	  </Content>
+	  <Content Include="Assets\Materials\Text.material.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Materials\UnlitTextured.material.json">
+	  </Content>
+	  <Content Include="Assets\Materials\UnlitTextured.material.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Meshes\Cube.obj">
+	  </Content>
+	  <Content Include="Assets\Meshes\Cube.obj">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Meshes\Quad.obj">
+	  </Content>
+	  <Content Include="Assets\Meshes\Quad.obj">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Meshes\Sphere.obj">
+	  </Content>
+	  <Content Include="Assets\Meshes\Sphere.obj">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Shaders\Text.fragment.glsl">
+	  </Content>
+	  <Content Include="Assets\Shaders\Text.fragment.glsl">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Shaders\Text.vertex.glsl">
+	  </Content>
+	  <Content Include="Assets\Shaders\Text.vertex.glsl">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Shaders\UnlitTextured.fragment.glsl">
+	  </Content>
+	  <Content Include="Assets\Shaders\UnlitTextured.fragment.glsl">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Shaders\UnlitTextured.vertex.glsl">
+	  </Content>
+	  <Content Include="Assets\Shaders\UnlitTextured.vertex.glsl">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Textures\Circle.png">
+	  </Content>
+	  <Content Include="Assets\Textures\Circle.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Textures\RightTriangle.png">
+	  </Content>
+	  <Content Include="Assets\Textures\RightTriangle.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Textures\Checkerboard.png">
+	  </Content>
+	  <Content Include="Assets\Textures\Checkerboard.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Textures\Square.png">
+	  </Content>
+	  <Content Include="Assets\Textures\Square.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Assets\Textures\Triangle.png">
+	  </Content>
+	  <Content Include="Assets\Textures\Triangle.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
+	  </Content>
 	</ItemGroup>
 
 	<ItemGroup>
