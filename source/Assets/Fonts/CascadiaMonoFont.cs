@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct CascadiaMonoFont : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Fonts/CascadiaMono.ttf";
+        static CascadiaMonoFont()
+        {
+            EmbeddedAddress.Register<CascadiaMonoFont>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Fonts/CascadiaMono.ttf";
     }
 }

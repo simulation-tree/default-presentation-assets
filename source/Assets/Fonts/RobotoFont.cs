@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct RobotoFont : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Fonts/Roboto.ttf";
+        static RobotoFont()
+        {
+            EmbeddedAddress.Register<RobotoFont>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Fonts/Roboto.ttf";
     }
 }

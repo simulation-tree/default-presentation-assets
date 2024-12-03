@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct CircleTexture : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Textures/Circle.png";
+        static CircleTexture()
+        {
+            EmbeddedAddress.Register<CircleTexture>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Textures/Circle.png";
     }
 }

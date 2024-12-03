@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct SquareTexture : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Textures/Square.png";
+        static SquareTexture()
+        {
+            EmbeddedAddress.Register<SquareTexture>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Textures/Square.png";
     }
 }

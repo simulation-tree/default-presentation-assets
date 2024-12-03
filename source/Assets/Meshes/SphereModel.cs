@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct SphereModel : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Meshes/Sphere.obj";
+        static SphereModel()
+        {
+            EmbeddedAddress.Register<SphereModel>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Meshes/Sphere.obj";
     }
 }

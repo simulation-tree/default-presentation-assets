@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct CubeModel : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Meshes/Cube.obj";
+        static CubeModel()
+        {
+            EmbeddedAddress.Register<CubeModel>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Meshes/Cube.obj";
     }
 }

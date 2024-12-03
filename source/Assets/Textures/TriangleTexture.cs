@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct TriangleTexture : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Textures/Triangle.png";
+        static TriangleTexture()
+        {
+            EmbeddedAddress.Register<TriangleTexture>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Textures/Triangle.png";
     }
 }

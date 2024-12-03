@@ -5,6 +5,11 @@ namespace DefaultPresentationAssets
 {
     public readonly struct UnlitTexturedFragmentShader : IDataReference
     {
-        FixedString IDataReference.Value => "Assets/Shaders/UnlitTextured.vertex.glsl";
+        static UnlitTexturedFragmentShader()
+        {
+            EmbeddedAddress.Register<UnlitTexturedFragmentShader>();
+        }
+
+        readonly FixedString IDataReference.Value => "Assets/Shaders/UnlitTextured.vertex.glsl";
     }
 }
