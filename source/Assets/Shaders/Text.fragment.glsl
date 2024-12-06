@@ -10,7 +10,7 @@ layout(location = 0) out vec4 outColor;
 void main() {
     vec4 textureColor = texture(fontAtlas, uv);
     float alpha = textureColor.x;
-    if (alpha <= 0.08) discard;
+    //if (alpha <= 0.08) discard;
 
     outColor = alpha * fragColor;
 }
