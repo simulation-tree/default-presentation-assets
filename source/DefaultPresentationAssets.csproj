@@ -31,6 +31,7 @@
 	  <None Remove="Assets\Shaders\UnlitTextured.fragment.glsl" />
 	  <None Remove="Assets\Shaders\UnlitTextured.vertex.glsl" />
 	  <None Remove="Assets\Textures\Circle.png" />
+	  <None Remove="Assets\Textures\RadialGradientAlpha.png" />
 	  <None Remove="Assets\Textures\RightTriangle.png" />
 	  <None Remove="Assets\Textures\Square.png" />
 	  <None Remove="Assets\Textures\Triangle.png" />
@@ -73,6 +74,8 @@
 	  <EmbeddedResource Include="Assets\Textures\Circle.png">
 	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </EmbeddedResource>
+	  <EmbeddedResource Include="Assets\Textures\RadialGradientAlpha.png" />
+	  <EmbeddedResource Include="Assets\Textures\RadialGradientBW.png" />
 	  <EmbeddedResource Include="Assets\Textures\RightTriangle.png">
 	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
 	  </EmbeddedResource>
