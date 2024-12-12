@@ -9,6 +9,7 @@ namespace DefaultPresentationAssets
         {
             EmbeddedAddress.Register<RadialGradientAlphaTexture>();
         }
+
         readonly FixedString IDataReference.Value => "Assets/Textures/RadialGradientAlpha.png";
     }
 }
