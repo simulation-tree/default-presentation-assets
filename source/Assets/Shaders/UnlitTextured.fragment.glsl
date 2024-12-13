@@ -19,7 +19,7 @@ void main() {
     float alpha = textureColor.a;
     int x = int(gl_FragCoord.x - 0.5);
     int y = int(gl_FragCoord.y - 0.5);
-    if (alpha < threshold[x % 4][y % 4])
+    if (alpha * fragColor.a < threshold[x % 4][y % 4])
         discard;
 
     textureColor.a = 1;
