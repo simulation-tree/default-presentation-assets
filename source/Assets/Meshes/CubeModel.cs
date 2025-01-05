@@ -1,5 +1,4 @@
 ﻿using Data;
-using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
@@ -10,6 +9,6 @@ namespace DefaultPresentationAssets
             EmbeddedAddress.Register<CubeModel>();
         }
 
-        readonly FixedString IDataReference.Value => "Assets/Meshes/Cube.obj";
+        readonly Address IDataReference.Value => "Assets/Meshes/Cube.obj";
     }
 }

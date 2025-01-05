@@ -1,5 +1,4 @@
 ﻿using Data;
-using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
@@ -10,6 +9,6 @@ namespace DefaultPresentationAssets
             EmbeddedAddress.Register<RobotoFont>();
         }
 
-        readonly FixedString IDataReference.Value => "Assets/Fonts/Roboto.ttf";
+        readonly Address IDataReference.Value => "Assets/Fonts/Roboto.ttf";
     }
 }

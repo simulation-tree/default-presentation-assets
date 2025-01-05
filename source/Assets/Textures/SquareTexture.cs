@@ -1,5 +1,4 @@
 ﻿using Data;
-using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
@@ -10,6 +9,6 @@ namespace DefaultPresentationAssets
             EmbeddedAddress.Register<SquareTexture>();
         }
 
-        readonly FixedString IDataReference.Value => "Assets/Textures/Square.png";
+        readonly Address IDataReference.Value => "Assets/Textures/Square.png";
     }
 }

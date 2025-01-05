@@ -1,5 +1,4 @@
 ﻿using Data;
-using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
@@ -10,6 +9,6 @@ namespace DefaultPresentationAssets
             EmbeddedAddress.Register<CheckerboardTexture>();
         }
 
-        readonly FixedString IDataReference.Value => "Assets/Textures/Checkerboard.png";
+        readonly Address IDataReference.Value => "Assets/Textures/Checkerboard.png";
     }
 }

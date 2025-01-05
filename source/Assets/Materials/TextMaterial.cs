@@ -1,5 +1,4 @@
 ﻿using Data;
-using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
@@ -12,6 +11,6 @@ namespace DefaultPresentationAssets
             EmbeddedAddress.Register<TextVertexShader>();
         }
 
-        readonly FixedString IDataReference.Value => "Assets/Materials/Text.material.json";
+        readonly Address IDataReference.Value => "Assets/Materials/Text.material.json";
     }
 }

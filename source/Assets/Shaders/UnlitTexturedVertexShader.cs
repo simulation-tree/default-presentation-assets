@@ -1,5 +1,4 @@
 ﻿using Data;
-using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
@@ -10,6 +9,6 @@ namespace DefaultPresentationAssets
             EmbeddedAddress.Register<UnlitTexturedVertexShader>();
         }
 
-        readonly FixedString IDataReference.Value => "Assets/Shaders/UnlitTextured.fragment.glsl";
+        readonly Address IDataReference.Value => "Assets/Shaders/UnlitTextured.fragment.glsl";
     }
 }

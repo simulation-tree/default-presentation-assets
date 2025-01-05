@@ -1,5 +1,4 @@
 ﻿using Data;
-using Unmanaged;
 
 namespace DefaultPresentationAssets
 {
@@ -10,6 +9,6 @@ namespace DefaultPresentationAssets
             EmbeddedAddress.Register<TextFragmentShader>();
         }
 
-        readonly FixedString IDataReference.Value => "Assets/Shaders/Text.fragment.glsl";
+        readonly Address IDataReference.Value => "Assets/Shaders/Text.fragment.glsl";
     }
 }
