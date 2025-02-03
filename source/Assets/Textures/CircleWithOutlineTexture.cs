@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct CircleWithOutlineTexture : IDataReference
+    public readonly struct CircleWithOutlineTexture : IEmbeddedResource
     {
-        static CircleWithOutlineTexture()
-        {
-            EmbeddedAddress.Register<CircleWithOutlineTexture>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Textures/CircleWithOutline.png";
+        readonly Address IEmbeddedResource.Address => "Assets/Textures/CircleWithOutline.png";
     }
 }

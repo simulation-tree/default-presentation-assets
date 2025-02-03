@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct UnlitTexturedFragmentShader : IDataReference
+    public readonly struct UnlitTexturedFragmentShader : IEmbeddedResource
     {
-        static UnlitTexturedFragmentShader()
-        {
-            EmbeddedAddress.Register<UnlitTexturedFragmentShader>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Shaders/UnlitTextured.vertex.glsl";
+        readonly Address IEmbeddedResource.Address => "Assets/Shaders/UnlitTextured.vertex.glsl";
     }
 }

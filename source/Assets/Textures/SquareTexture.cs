@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct SquareTexture : IDataReference
+    public readonly struct SquareTexture : IEmbeddedResource
     {
-        static SquareTexture()
-        {
-            EmbeddedAddress.Register<SquareTexture>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Textures/Square.png";
+        readonly Address IEmbeddedResource.Address => "Assets/Textures/Square.png";
     }
 }

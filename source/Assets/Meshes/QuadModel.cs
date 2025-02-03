@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct QuadModel : IDataReference
+    public readonly struct QuadModel : IEmbeddedResource
     {
-        static QuadModel()
-        {
-            EmbeddedAddress.Register<QuadModel>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Meshes/Quad.obj";
+        readonly Address IEmbeddedResource.Address => "Assets/Meshes/Quad.obj";
     }
 }

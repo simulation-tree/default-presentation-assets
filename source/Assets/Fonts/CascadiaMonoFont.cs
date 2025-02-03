@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct CascadiaMonoFont : IDataReference
+    public readonly struct CascadiaMonoFont : IEmbeddedResource
     {
-        static CascadiaMonoFont()
-        {
-            EmbeddedAddress.Register<CascadiaMonoFont>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Fonts/CascadiaMono.ttf";
+        readonly Address IEmbeddedResource.Address => "Assets/Fonts/CascadiaMono.ttf";
     }
 }

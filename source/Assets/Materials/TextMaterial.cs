@@ -2,15 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct TextMaterial : IDataReference
+    public readonly struct TextMaterial : IEmbeddedResource
     {
-        static TextMaterial()
-        {
-            EmbeddedAddress.Register<TextMaterial>();
-            EmbeddedAddress.Register<TextFragmentShader>();
-            EmbeddedAddress.Register<TextVertexShader>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Materials/Text.material.json";
+        readonly Address IEmbeddedResource.Address => "Assets/Materials/Text.material.json";
     }
 }

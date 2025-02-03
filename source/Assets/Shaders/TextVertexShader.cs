@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct TextVertexShader : IDataReference
+    public readonly struct TextVertexShader : IEmbeddedResource
     {
-        static TextVertexShader()
-        {
-            EmbeddedAddress.Register<TextVertexShader>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Shaders/Text.vertex.glsl";
+        readonly Address IEmbeddedResource.Address => "Assets/Shaders/Text.vertex.glsl";
     }
 }

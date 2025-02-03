@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct CheckerboardTexture : IDataReference
+    public readonly struct CheckerboardTexture : IEmbeddedResource
     {
-        static CheckerboardTexture()
-        {
-            EmbeddedAddress.Register<CheckerboardTexture>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Textures/Checkerboard.png";
+        readonly Address IEmbeddedResource.Address => "Assets/Textures/Checkerboard.png";
     }
 }

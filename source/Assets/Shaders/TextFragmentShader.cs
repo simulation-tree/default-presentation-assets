@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct TextFragmentShader : IDataReference
+    public readonly struct TextFragmentShader : IEmbeddedResource
     {
-        static TextFragmentShader()
-        {
-            EmbeddedAddress.Register<TextFragmentShader>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Shaders/Text.fragment.glsl";
+        readonly Address IEmbeddedResource.Address => "Assets/Shaders/Text.fragment.glsl";
     }
 }

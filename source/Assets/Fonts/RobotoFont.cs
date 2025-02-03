@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct RobotoFont : IDataReference
+    public readonly struct RobotoFont : IEmbeddedResource
     {
-        static RobotoFont()
-        {
-            EmbeddedAddress.Register<RobotoFont>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Fonts/Roboto.ttf";
+        readonly Address IEmbeddedResource.Address => "Assets/Fonts/Roboto.ttf";
     }
 }

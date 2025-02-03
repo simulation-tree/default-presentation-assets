@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct RadialGradientBWTexture : IDataReference
+    public readonly struct RadialGradientBWTexture : IEmbeddedResource
     {
-        static RadialGradientBWTexture()
-        {
-            EmbeddedAddress.Register<RadialGradientBWTexture>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Textures/RadialGradientBW.png";
+        readonly Address IEmbeddedResource.Address => "Assets/Textures/RadialGradientBW.png";
     }
 }

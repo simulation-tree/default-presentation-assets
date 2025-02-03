@@ -2,15 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct UnlitTexturedMaterial : IDataReference
+    public readonly struct UnlitTexturedMaterial : IEmbeddedResource
     {
-        static UnlitTexturedMaterial()
-        {
-            EmbeddedAddress.Register<UnlitTexturedMaterial>();
-            EmbeddedAddress.Register<UnlitTexturedFragmentShader>();
-            EmbeddedAddress.Register<UnlitTexturedVertexShader>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Materials/UnlitTextured.material.json";
+        readonly Address IEmbeddedResource.Address => "Assets/Materials/UnlitTextured.material.json";
     }
 }

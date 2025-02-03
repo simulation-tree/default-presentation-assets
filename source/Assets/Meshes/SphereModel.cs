@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct SphereModel : IDataReference
+    public readonly struct SphereModel : IEmbeddedResource
     {
-        static SphereModel()
-        {
-            EmbeddedAddress.Register<SphereModel>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Meshes/Sphere.obj";
+        readonly Address IEmbeddedResource.Address => "Assets/Meshes/Sphere.obj";
     }
 }

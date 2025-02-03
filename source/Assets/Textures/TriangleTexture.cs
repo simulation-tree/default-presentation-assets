@@ -2,13 +2,8 @@
 
 namespace DefaultPresentationAssets
 {
-    public readonly struct TriangleTexture : IDataReference
+    public readonly struct TriangleTexture : IEmbeddedResource
     {
-        static TriangleTexture()
-        {
-            EmbeddedAddress.Register<TriangleTexture>();
-        }
-
-        readonly Address IDataReference.Value => "Assets/Textures/Triangle.png";
+        readonly Address IEmbeddedResource.Address => "Assets/Textures/Triangle.png";
     }
 }
