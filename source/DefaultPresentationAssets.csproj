@@ -9,8 +9,8 @@
         <IsTrimmable>True</IsTrimmable>
         <Title>Default Presentation Assets</Title>
         <Authors>popcron</Authors>
-        <Company>game-simulations</Company>
-        <RepositoryUrl>https://github.com/game-simulations/default-presentation-assets</RepositoryUrl>
+        <Company>simulation-tree</Company>
+        <RepositoryUrl>https://github.com/simulation-tree/default-presentation-assets</RepositoryUrl>
         <PackageId/>
     </PropertyGroup>
 
