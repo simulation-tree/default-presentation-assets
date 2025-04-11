@@ -1,4 +1,7 @@
 ﻿{
   "vertex": "Assets/Shaders/UnlitTextured.vertex.glsl",
-  "fragment": "Assets/Shaders/UnlitTextured.fragment.glsl"
+  "fragment": "Assets/Shaders/UnlitTextured.fragment.glsl",
+  "depthCompareOperation": "lessOrEqual",
+  "depthWrite": true,
+  "depthTest": true
 }
