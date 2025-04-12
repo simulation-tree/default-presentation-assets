@@ -1,8 +1,8 @@
 ﻿{
-  "vertex": "Assets/Shaders/Text.vertex.glsl",
-  "fragment": "Assets/Shaders/Text.fragment.glsl",
+  "vertex": "Assets/Shaders/UnlitTextured.vertex.glsl",
+  "fragment": "Assets/Shaders/UnlitTexturedTransparent.fragment.glsl",
   "renderOrder": 1,
-  "depthCompareOperation": "less",
+  "depthCompareOperation": "lessOrEqual",
   "depthWrite": false,
   "depthTest": true,
   "blendEnable": true,
