@@ -101,9 +101,9 @@
 
   <ItemGroup>
     <Content Include="bin/Debug/net9.0/DefaultPresentationAssets.dll" Pack="true" PackagePath="tools/debug/DefaultPresentationAssets.dll" Visible="false"/>
-    <Content Include="bin/Debug/net9.0/DefaultPresentationAssets.xml" Pack="true" PackagePath="tools/debug/DefaultPresentationAssets.xml" Visible="false"/>
+    <Content Include="bin/Debug/net9.0/DefaultPresentationAssets.xml" Pack="true" PackagePath="tools/debug/DefaultPresentationAssets.xml" Visible="false" Condition="Exists('bin/Debug/net9.0/DefaultPresentationAssets.xml')"/>
     <Content Include="bin/Release/net9.0/DefaultPresentationAssets.dll" Pack="true" PackagePath="tools/release/DefaultPresentationAssets.dll" Visible="false"/>
-    <Content Include="bin/Release/net9.0/DefaultPresentationAssets.xml" Pack="true" PackagePath="tools/release/DefaultPresentationAssets.xml" Visible="false"/>
+    <Content Include="bin/Release/net9.0/DefaultPresentationAssets.xml" Pack="true" PackagePath="tools/release/DefaultPresentationAssets.xml" Visible="false" Condition="Exists('bin/Release/net9.0/DefaultPresentationAssets.xml')"/>
     <Content Include="build/DefaultPresentationAssets.targets" Pack="true" PackagePath="build/DefaultPresentationAssets.targets" Visible="false"/>
   </ItemGroup>
 
