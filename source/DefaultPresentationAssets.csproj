@@ -1,101 +1,110 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
-        <ImplicitUsings>disable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <IsAotCompatible>True</IsAotCompatible>
-        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-        <IsTrimmable>True</IsTrimmable>
-        <Title>Default Presentation Assets</Title>
-        <Authors>popcron</Authors>
-        <Company>simulation-tree</Company>
-        <RepositoryUrl>https://github.com/simulation-tree/default-presentation-assets</RepositoryUrl>
-        <PackageId />
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAotCompatible>True</IsAotCompatible>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <IsTrimmable>True</IsTrimmable>
+    <Title>Default Presentation Assets</Title>
+    <Authors>popcron</Authors>
+    <Company>simulation-tree</Company>
+    <RepositoryUrl>https://github.com/simulation-tree/default-presentation-assets</RepositoryUrl>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <None Remove="Assets\Fonts\CascadiaMono.ttf" />
-        <None Remove="Assets\Fonts\Roboto.ttf" />
-        <None Remove="Assets\Materials\Text.material.json" />
-        <None Remove="Assets\Materials\UnlitTextured.material.json" />
-        <None Remove="Assets\Meshes\Cube.obj" />
-        <None Remove="Assets\Meshes\Quad.obj" />
-        <None Remove="Assets\Meshes\Sphere.obj" />
-        <None Remove="Assets\Shaders\Text.fragment.glsl" />
-        <None Remove="Assets\Shaders\Text.vertex.glsl" />
-        <None Remove="Assets\Shaders\UnlitTextured.fragment.glsl" />
-        <None Remove="Assets\Shaders\UnlitTextured.vertex.glsl" />
-        <None Remove="Assets\Textures\Circle.png" />
-        <None Remove="Assets\Textures\CircleWithOutline.png" />
-        <None Remove="Assets\Textures\RadialGradientAlpha.png" />
-        <None Remove="Assets\Textures\RightTriangle.png" />
-        <None Remove="Assets\Textures\Square.png" />
-        <None Remove="Assets\Textures\Triangle.png" />
-    </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\Fonts\CascadiaMono.ttf"/>
+    <None Remove="Assets\Fonts\Roboto.ttf"/>
+    <None Remove="Assets\Materials\Text.material.json"/>
+    <None Remove="Assets\Materials\UnlitTextured.material.json"/>
+    <None Remove="Assets\Meshes\Cube.obj"/>
+    <None Remove="Assets\Meshes\Quad.obj"/>
+    <None Remove="Assets\Meshes\Sphere.obj"/>
+    <None Remove="Assets\Shaders\Text.fragment.glsl"/>
+    <None Remove="Assets\Shaders\Text.vertex.glsl"/>
+    <None Remove="Assets\Shaders\UnlitTextured.fragment.glsl"/>
+    <None Remove="Assets\Shaders\UnlitTextured.vertex.glsl"/>
+    <None Remove="Assets\Textures\Circle.png"/>
+    <None Remove="Assets\Textures\CircleWithOutline.png"/>
+    <None Remove="Assets\Textures\RadialGradientAlpha.png"/>
+    <None Remove="Assets\Textures\RightTriangle.png"/>
+    <None Remove="Assets\Textures\Square.png"/>
+    <None Remove="Assets\Textures\Triangle.png"/>
+  </ItemGroup>
 
-    <ItemGroup>
-        <EmbeddedResource Include="Assets\Fonts\CascadiaMono.ttf">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Fonts\Roboto.ttf">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Materials\Text.material.json">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Materials\UnlitTexturedTransparent.material.json" />
-        <EmbeddedResource Include="Assets\Materials\UnlitTextured.material.json">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Meshes\Cube.obj">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Meshes\Quad.obj">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Meshes\Sphere.obj">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Shaders\Text.fragment.glsl">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Shaders\Text.vertex.glsl">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Shaders\UnlitTexturedTransparent.fragment.glsl" />
-        <EmbeddedResource Include="Assets\Shaders\UnlitTextured.fragment.glsl">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Shaders\UnlitTextured.vertex.glsl">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Textures\Circle.png">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Textures\CircleWithOutline.png" />
-        <EmbeddedResource Include="Assets\Textures\RadialGradientAlpha.png" />
-        <EmbeddedResource Include="Assets\Textures\RadialGradientBW.png" />
-        <EmbeddedResource Include="Assets\Textures\RightTriangle.png">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Textures\Checkerboard.png">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Textures\Square.png">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Assets\Textures\Triangle.png">
-            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-        </EmbeddedResource>
-    </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Fonts\CascadiaMono.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Fonts\Roboto.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Materials\Text.material.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Materials\UnlitTexturedTransparent.material.json"/>
+    <EmbeddedResource Include="Assets\Materials\UnlitTextured.material.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Meshes\Cube.obj">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Meshes\Quad.obj">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Meshes\Sphere.obj">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Shaders\Text.fragment.glsl">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Shaders\Text.vertex.glsl">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Shaders\UnlitTexturedTransparent.fragment.glsl"/>
+    <EmbeddedResource Include="Assets\Shaders\UnlitTextured.fragment.glsl">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Shaders\UnlitTextured.vertex.glsl">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Textures\Circle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Textures\CircleWithOutline.png"/>
+    <EmbeddedResource Include="Assets\Textures\RadialGradientAlpha.png"/>
+    <EmbeddedResource Include="Assets\Textures\RadialGradientBW.png"/>
+    <EmbeddedResource Include="Assets\Textures\RightTriangle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Textures\Checkerboard.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Textures\Square.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Textures\Triangle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\..\data\core\Data.Core.csproj" />
-        <ProjectReference Include="..\..\data\generator\Data.Generator.csproj">
-            <OutputItemType>Analyzer</OutputItemType>
-            <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-        </ProjectReference>
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\data\core\Data.Core.csproj"/>
+    <ProjectReference Include="..\..\data\generator\Data.Generator.csproj">
+      <OutputItemType>Analyzer</OutputItemType>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin/Debug/net9.0/DefaultPresentationAssets.dll" Pack="true" PackagePath="tools/debug/DefaultPresentationAssets.dll" Visible="false"/>
+    <Content Include="bin/Debug/net9.0/DefaultPresentationAssets.xml" Pack="true" PackagePath="tools/debug/DefaultPresentationAssets.xml" Visible="false"/>
+    <Content Include="bin/Release/net9.0/DefaultPresentationAssets.dll" Pack="true" PackagePath="tools/release/DefaultPresentationAssets.dll" Visible="false"/>
+    <Content Include="bin/Release/net9.0/DefaultPresentationAssets.xml" Pack="true" PackagePath="tools/release/DefaultPresentationAssets.xml" Visible="false"/>
+    <Content Include="build/DefaultPresentationAssets.targets" Pack="true" PackagePath="build/DefaultPresentationAssets.targets" Visible="false"/>
+  </ItemGroup>
 
 </Project>
