@@ -3,7 +3,7 @@
 
     <ItemGroup>
         <Reference Include="DefaultPresentationAssets">
-            <HintPath>$(MSBuildThisFileDirectory)..\lib\net9.0\$(Configuration)\DefaultPresentationAssets.dll</HintPath>
+            <HintPath>$(MSBuildThisFileDirectory)..\lib\$(TargetFramework)\$(Configuration)\DefaultPresentationAssets.dll</HintPath>
         </Reference>
     </ItemGroup>
 
